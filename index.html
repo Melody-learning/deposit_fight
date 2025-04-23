@@ -65,592 +65,819 @@
         <main class="mt-12">
 
             <!-- Day Block: April 18 -->
-            <div class="mb-12">
+            <section class="mb-12">
                 <div class="sticky top-0 bg-brand-bg py-3 z-10"> <!-- Sticky Date Header -->
                      <h2 class="text-xl md:text-2xl font-semibold text-brand-dark border-b pb-2 border-brand-light">
                         <i data-feather="calendar" class="inline-block w-5 h-5 mr-2 align-text-bottom"></i>2025年4月18日 (星期五)
                     </h2>
                 </div>
 
-                <div class="mt-4 space-y-6 border-l-2 border-brand-light ml-3 md:ml-5">
+                <!-- Timeline Container -->
+                <div class="mt-6 relative md:pl-5">
+                    <!-- Central Line (visible on md+) -->
+                    <div class="absolute left-0 md:left-1/2 w-0.5 h-full bg-brand-light transform md:-translate-x-1/2"></div>
 
-                    <!-- Event: Agent confirms cat & rent details with Landlord -->
-                    <div class="relative pl-8 md:pl-10 pb-6">
-                        <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                        <p class="text-xs text-brand-mid mb-1">时间不明确 (看房期间)</p>
-                        <p class="text-sm leading-relaxed">
-                            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
-                            中介确认房东接受养猫（损坏需买新赔偿），确认租金含物业不含网，水电租客自付。
-                        </p>
+                    <!-- Event: Agent confirms cat & rent details with Landlord (Right Side) -->
+                    <div class="relative flex md:justify-end mb-8">
+                        <div class="w-full md:w-1/2 md:pl-8">
+                            <div class="relative pl-8 md:pl-0 pb-6">
+                                <!-- Dot on the left for mobile, attached to center line on md+ -->
+                                <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-purple-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                <p class="text-xs text-brand-mid mb-1">时间不明确 (看房期间)</p>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
+                                    中介确认房东接受养猫（损坏需买新赔偿），确认租金含物业不含网，水电租客自付。
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Event: Add Agent WeChat -->
-                     <div class="relative pl-8 md:pl-10 pb-6">
-                        <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                        <p class="text-xs text-brand-mid mb-1">中午 12:38</p>
-                        <p class="text-sm leading-relaxed">
-                            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
-                            您添加中介微信。
-                        </p>
+                    <!-- Event: Add Agent WeChat (Left Side) -->
+                     <div class="relative flex md:justify-start mb-8">
+                         <div class="w-full md:w-1/2 md:pr-8">
+                            <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                <p class="text-xs text-brand-mid mb-1">中午 12:38</p>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
+                                    您添加中介微信。
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Event: Initial Deposit Payment (Key Event) -->
-                     <div class="relative pl-8 md:pl-10 pb-6 bg-green-50 -ml-3 md:-ml-5 p-4 rounded-r-lg border-l-4 border-green-500">
-                        <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-5 w-4 h-4 bg-green-600 rounded-full border-2 border-white"></div>
-                         <p class="text-xs text-brand-mid mb-1 font-semibold">13:06 前</p>
-                        <p class="text-sm font-semibold text-green-800 mb-1">
-                             <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
-                            <i data-feather="check-circle" class="inline-block w-4 h-4 mr-1 align-text-bottom"></i>支付定金 ¥3700.00
-                        </p>
+                    <!-- Event: Initial Deposit Payment (Left Side, Key Event) -->
+                     <div class="relative flex md:justify-start mb-8">
+                        <div class="w-full md:w-1/2 md:pr-8">
+                            <div class="relative pl-8 md:pl-0 md:text-right pb-6 bg-green-50 p-4 rounded-lg border-l-4 border-green-500 md:border-l-0 md:border-r-4">
+                                <div class="absolute left-[-0.125rem] top-5 w-4 h-4 bg-green-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                <p class="text-xs text-brand-mid mb-1 font-semibold">13:06 前</p>
+                                <p class="text-sm font-semibold text-green-800 mb-1">
+                                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
+                                    <i data-feather="check-circle" class="inline-block w-4 h-4 mr-1 align-text-bottom"></i>支付定金 ¥3700.00
+                                </p>
+                            </div>
+                         </div>
                     </div>
 
-                    <!-- Event: Agent tries to transfer deposit -->
-                    <div class="relative pl-8 md:pl-10 pb-6">
-                        <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                        <p class="text-xs text-brand-mid mb-1">13:34</p>
-                        <p class="text-sm leading-relaxed">
-                            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
-                            中介尝试向房东转账定金。
-                        </p>
+                    <!-- Event: Agent tries to transfer deposit (Right Side) -->
+                    <div class="relative flex md:justify-end mb-8">
+                        <div class="w-full md:w-1/2 md:pl-8">
+                            <div class="relative pl-8 md:pl-0 pb-6">
+                                <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-purple-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                <p class="text-xs text-brand-mid mb-1">13:34</p>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
+                                    中介尝试向房东转账定金。
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Event: Discussion on terms & initial payment method -->
-                    <div class="relative pl-8 md:pl-10 pb-6">
-                        <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                        <p class="text-xs text-brand-mid mb-1">13:34 - 13:51</p>
-                        <p class="text-sm leading-relaxed">
-                            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
-                            双方沟通确认签约时间（周日）、定金转押金、<strong class="font-semibold">初始付款方式（押一付一）</strong>。房东同意定金转押金，对 \"首季押一付一，后续押一付三\" 的付款方案表示\"好的\"，但又表示要和领导说一下，问题不大。房东明确<strong class="font-semibold">合同签后才能办网</strong>。
-                        </p>
+                    <!-- Event: Discussion on terms & initial payment method (Right Side) -->
+                    <div class="relative flex md:justify-end mb-8">
+                         <div class="w-full md:w-1/2 md:pl-8">
+                            <div class="relative pl-8 md:pl-0 pb-6">
+                                <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-purple-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                <p class="text-xs text-brand-mid mb-1">13:34 - 13:51</p>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
+                                    双方沟通确认签约时间（周日）、定金转押金、<strong class="font-semibold">初始付款方式（押一付一）</strong>。房东同意定金转押金，对 "首季押一付一，后续押一付三" 的付款方案表示"好的"，但又表示要和领导说一下，问题不大。房东明确<strong class="font-semibold">合同签后才能办网</strong>。
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Event: Deposit Transfer Completed (Key Evidence) -->
-                    <div class="relative pl-8 md:pl-10 pb-6 bg-green-50 -ml-3 md:-ml-5 p-4 rounded-r-lg border-l-4 border-green-500">
-                         <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-5 w-4 h-4 bg-green-600 rounded-full border-2 border-white"></div>
-                         <p class="text-xs text-brand-mid mb-1 font-semibold">13:54 (付款时间)</p>
-                         <p class="text-sm font-semibold text-green-800 mb-2">
-                            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
-                             <i data-feather="check-circle" class="inline-block w-4 h-4 mr-1 align-text-bottom"></i>中介向房东转账 ¥3700.00 (定金)
-                         </p>
-                         <blockquote class="art-quote !border-green-600 !text-green-900 text-xs italic mt-2 p-2 bg-green-100 rounded">
-                            付款留言: "虹云之城5-2-1703 4.18收定金3700，签合同后自动转为押金，租客需求，头一个季度押一付一，后三季度押一付三"
-                         </blockquote>
-                          <p class="text-xs text-gray-500 mt-2">注：明确约定为 <strong class="text-brand-accent">定金</strong> 并在后续转为押金。</p>
+                    <!-- Event: Deposit Transfer Completed (Right Side, Key Evidence) -->
+                    <div class="relative flex md:justify-end mb-8">
+                        <div class="w-full md:w-1/2 md:pl-8">
+                            <div class="relative pl-8 md:pl-0 pb-6 bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                                <div class="absolute left-[-0.125rem] top-5 w-4 h-4 bg-green-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                <p class="text-xs text-brand-mid mb-1 font-semibold">13:54 (付款时间)</p>
+                                <p class="text-sm font-semibold text-green-800 mb-2">
+                                    <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
+                                     <i data-feather="check-circle" class="inline-block w-4 h-4 mr-1 align-text-bottom"></i>中介向房东转账 ¥3700.00 (定金)
+                                 </p>
+                                 <blockquote class="art-quote !border-green-600 !text-green-900 text-xs italic mt-2 p-2 bg-green-100 rounded">
+                                    付款留言: "虹云之城5-2-1703 4.18收定金3700，签合同后自动转为押金，租客需求，头一个季度押一付一，后三季度押一付三"
+                                 </blockquote>
+                                  <p class="text-xs text-gray-500 mt-2">注：明确约定为 <strong class="text-brand-accent">定金</strong> 并在后续转为押金。</p>
+                             </div>
+                        </div>
+                    </div>
+
+                     <!-- Event: Landlord agrees to delist (Right Side) -->
+                     <div class="relative flex md:justify-end mb-8">
+                        <div class="w-full md:w-1/2 md:pl-8">
+                           <div class="relative pl-8 md:pl-0 pb-6">
+                               <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-red-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                               <p class="text-xs text-brand-mid mb-1">13:55</p>
+                               <p class="text-sm leading-relaxed">
+                                   <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
+                                   确认无需再看房，同意下架房源，表示次日(4月19日)告知签约时间，需晚上和领导沟通价格和付款方式。再次强调签合同后才能办理一切事宜。
+                               </p>
+                            </div>
+                        </div>
                      </div>
 
-                     <!-- Event: Landlord agrees to delist -->
-                     <div class="relative pl-8 md:pl-10 pb-6">
-                        <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                        <p class="text-xs text-brand-mid mb-1">13:55</p>
-                        <p class="text-sm leading-relaxed">
-                            <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
-                            确认无需再看房，同意下架房源，表示次日(4月19日)告知签约时间，需晚上和领导沟通价格和付款方式。再次强调签合同后才能办理一切事宜。
-                        </p>
-                     </div>
-
-                      <!-- Event: Broadband discussion (Interspersed) -->
-                      <div class="relative pl-8 md:pl-10 pb-6">
-                          <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                         <p class="text-xs text-brand-mid mb-1">13:35 - 14:01 (穿插进行)</p>
-                         <p class="text-sm leading-relaxed mb-1">
-                             <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
-                             要求安排办理宽带（非移动）。
-                         </p>
-                          <p class="text-sm leading-relaxed">
-                              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded mr-1">【中介-您】</span>
-                             中介反馈房东要求签合同后办网，双方初步约定周日(4月20日)下午办理。
-                         </p>
+                      <!-- Event: Broadband discussion (Left Side) -->
+                      <div class="relative flex md:justify-start mb-8">
+                          <div class="w-full md:w-1/2 md:pr-8">
+                            <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                <p class="text-xs text-brand-mid mb-1">13:35 - 14:01 (穿插进行)</p>
+                                <p class="text-sm leading-relaxed mb-1">
+                                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
+                                    要求安排办理宽带（非移动）。
+                                </p>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded mr-1">【中介-您】</span>
+                                   中介反馈房东要求签合同后办网，双方初步约定周日(4月20日)下午办理。
+                                </p>
+                            </div>
+                        </div>
                       </div>
 
-                     <!-- Event: Contract Signing & WeChat Deposit Agreement Draft -->
-                      <div class="relative pl-8 md:pl-10 pb-6">
-                          <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                         <p class="text-xs text-brand-mid mb-1">14:06</p>
-                         <p class="text-sm leading-relaxed mb-1">
-                              <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
-                             约定周日(4月20日)签合同，要求中介与房东约时间。
-                         </p>
-                         <p class="text-sm leading-relaxed">
-                              <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded mr-1">【中介-您】</span>
-                             中介发送 \"微信定金协议\" 文本草稿（基于双方沟通结果）。
-                         </p>
+                     <!-- Event: Contract Signing & WeChat Deposit Agreement Draft (Left Side) -->
+                      <div class="relative flex md:justify-start mb-8">
+                           <div class="w-full md:w-1/2 md:pr-8">
+                            <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                <p class="text-xs text-brand-mid mb-1">14:06</p>
+                                <p class="text-sm leading-relaxed mb-1">
+                                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
+                                    约定周日(4月20日)签合同，要求中介与房东约时间。
+                                </p>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded mr-1">【中介-您】</span>
+                                    中介发送 "微信定金协议" 文本草稿（基于双方沟通结果）。
+                                </p>
+                            </div>
+                        </div>
                      </div>
 
-                     <!-- Event: Agreement Refinement -->
-                      <div class="relative pl-8 md:pl-10 pb-6">
-                         <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                         <p class="text-xs text-brand-mid mb-1">14:06 - 14:24</p>
-                          <p class="text-sm leading-relaxed">
-                            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
-                             您提出增加 \"房屋问题无法签约\" 和 \"宠物损坏责任\" 条款。
-                         </p>
-                         <p class="text-sm leading-relaxed mt-1">
-                             <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded mr-1">【中介-您】</span>
-                             中介更新\"微信定金协议\"文本。
-                         </p>
+                     <!-- Event: Agreement Refinement (Left Side) -->
+                      <div class="relative flex md:justify-start mb-8">
+                         <div class="w-full md:w-1/2 md:pr-8">
+                            <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                <p class="text-xs text-brand-mid mb-1">14:06 - 14:24</p>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
+                                    您提出增加 "房屋问题无法签约" 和 "宠物损坏责任" 条款。
+                                </p>
+                                <p class="text-sm leading-relaxed mt-1">
+                                    <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded mr-1">【中介-您】</span>
+                                    中介更新"微信定金协议"文本。
+                                </p>
+                            </div>
+                        </div>
                      </div>
 
-                      <!-- Event: Agent sends updated agreement to Landlord -->
-                      <div class="relative pl-8 md:pl-10 pb-6">
-                         <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                         <p class="text-xs text-brand-mid mb-1">14:39</p>
-                         <p class="text-sm leading-relaxed">
-                             <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
-                             中介将更新后的\"微信定金协议\"文本发给房东。
-                         </p>
+                      <!-- Event: Agent sends updated agreement to Landlord (Right Side) -->
+                      <div class="relative flex md:justify-end mb-8">
+                         <div class="w-full md:w-1/2 md:pl-8">
+                            <div class="relative pl-8 md:pl-0 pb-6">
+                                <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-purple-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                <p class="text-xs text-brand-mid mb-1">14:39</p>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
+                                    中介将更新后的"微信定金协议"文本发给房东。
+                                </p>
+                            </div>
+                         </div>
                      </div>
 
-                      <!-- Event: Landlord Rejects WeChat Agreement Format -->
-                      <div class="relative pl-8 md:pl-10 pb-6">
-                         <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                         <p class="text-xs text-brand-mid mb-1">14:43 - 14:45</p>
-                         <p class="text-sm leading-relaxed">
-                              <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
-                             房东表示中介发的协议文本 \"不行\"，理由是 \"定金由收钱方发出\"，并提出用自己的模板。中介同意。
-                         </p>
+                      <!-- Event: Landlord Rejects WeChat Agreement Format (Right Side) -->
+                      <div class="relative flex md:justify-end mb-8">
+                         <div class="w-full md:w-1/2 md:pl-8">
+                            <div class="relative pl-8 md:pl-0 pb-6">
+                                <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-red-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                <p class="text-xs text-brand-mid mb-1">14:43 - 14:45</p>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
+                                    房东表示中介发的协议文本 "不行"，理由是 "定金由收钱方发出"，并提出用自己的模板。中介同意。
+                                </p>
+                            </div>
+                         </div>
                      </div>
 
-                      <!-- Event: Landlord Attitude Shift (Key Turning Point) -->
-                     <div class="relative pl-8 md:pl-10 pb-6 bg-yellow-50 -ml-3 md:-ml-5 p-4 rounded-r-lg border-l-4 border-yellow-500">
-                         <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-5 w-4 h-4 bg-yellow-600 rounded-full border-2 border-white"></div>
-                          <p class="text-xs text-brand-mid mb-1 font-semibold">14:46</p>
-                         <p class="text-sm font-semibold text-yellow-800 mb-1">
-                              <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
-                              提出损坏赔偿需买新。 <i data-feather="alert-triangle" class="inline-block w-4 h-4 mr-1 align-text-bottom text-yellow-600"></i>开始对价格和付款方式表达不满
-                         </p>
-                         <p class="text-sm leading-relaxed text-yellow-900 mb-2">
-                            认为3700的价格是基于<strong class="font-semibold">"押一付三"的意向</strong>，且<strong class="font-semibold">押一付一风险高</strong>，需要请示领导。首次提及内部审批流程。
-                         </p>
-                         <p class="text-xs text-gray-500 mt-2">注：房东开始显露对"押一付一"的不满和反悔意图，与之前接受的态度矛盾。</p>
+                      <!-- Event: Landlord Attitude Shift (Right Side, Key Turning Point) -->
+                     <div class="relative flex md:justify-end mb-8">
+                         <div class="w-full md:w-1/2 md:pl-8">
+                            <div class="relative pl-8 md:pl-0 pb-6 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-500">
+                                <div class="absolute left-[-0.125rem] top-5 w-4 h-4 bg-yellow-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                <p class="text-xs text-brand-mid mb-1 font-semibold">14:46</p>
+                                <p class="text-sm font-semibold text-yellow-800 mb-1">
+                                    <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
+                                   提出损坏赔偿需买新。 <i data-feather="alert-triangle" class="inline-block w-4 h-4 mr-1 align-text-bottom text-yellow-600"></i>开始对价格和付款方式表达不满
+                                </p>
+                                <p class="text-sm leading-relaxed text-yellow-900 mb-2">
+                                    认为3700的价格是基于<strong class="font-semibold">"押一付三"的意向</strong>，且<strong class="font-semibold">押一付一风险高</strong>，需要请示领导。首次提及内部审批流程。
+                                </p>
+                                <p class="text-xs text-gray-500 mt-2">注：房东开始显露对"押一付一"的不满和反悔意图，与之前接受的态度矛盾。</p>
+                            </div>
+                         </div>
                      </div>
 
-                     <!-- Event: Heated Discussion -->
-                     <div class="relative pl-8 md:pl-10 pb-6">
-                          <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                          <p class="text-xs text-brand-mid mb-1">14:46 - 14:57</p>
-                          <p class="text-sm leading-relaxed">
-                             <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
-                             双方就付款方式、养宠风险、赔偿标准、合作流程等问题进行激烈沟通。房东态度趋于强硬，指责中介"毛病多"，强调 "押一付一做不了主"，需 "报上审批"、"大老板点头"，并将决策推迟到晚上开会。房东明确表示如果是"押一付三"，现在就能发合同。
-                          </p>
+                     <!-- Event: Heated Discussion (Right Side) -->
+                     <div class="relative flex md:justify-end mb-8">
+                          <div class="w-full md:w-1/2 md:pl-8">
+                            <div class="relative pl-8 md:pl-0 pb-6">
+                                <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-purple-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                <p class="text-xs text-brand-mid mb-1">14:46 - 14:57</p>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
+                                    双方就付款方式、养宠风险、赔偿标准、合作流程等问题进行激烈沟通。房东态度趋于强硬，指责中介"毛病多"，强调 "押一付一做不了主"，需 "报上审批"、"大老板点头"，并将决策推迟到晚上开会。房东明确表示如果是"押一付三"，现在就能发合同。
+                                </p>
+                            </div>
+                        </div>
                       </div>
 
 
-                     <!-- Event: You Agree to "Deposit 1, Pay 3" -->
-                      <div class="relative pl-8 md:pl-10 pb-6">
-                          <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                         <p class="text-xs text-brand-mid mb-1">15:39</p>
-                         <p class="text-sm leading-relaxed">
-                             <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
-                             (得知房东对押一付一强烈反对后) 您同意付款方式改为<strong class="font-semibold">一直 "押一付三"</strong>。
-                         </p>
+                     <!-- Event: You Agree to "Deposit 1, Pay 3" (Left Side) -->
+                      <div class="relative flex md:justify-start mb-8">
+                          <div class="w-full md:w-1/2 md:pr-8">
+                            <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                <p class="text-xs text-brand-mid mb-1">15:39</p>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
+                                    (得知房东对押一付一强烈反对后) 您同意付款方式改为<strong class="font-semibold">一直 "押一付三"</strong>。
+                                </p>
+                            </div>
+                        </div>
                       </div>
-                      <div class="relative pl-8 md:pl-10 pb-6">
-                          <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                         <p class="text-xs text-brand-mid mb-1">15:49</p>
-                          <p class="text-sm leading-relaxed">
-                              <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
-                             中介告知房东，租客已同意<strong class="font-semibold">一直 "押一付三"</strong>。
-                         </p>
+                      \
+                     <!-- Event: Agent informs landlord of agreement (Right Side) -->
+                      <div class="relative flex md:justify-end mb-8">
+                         <div class="w-full md:w-1/2 md:pl-8">
+                            <div class="relative pl-8 md:pl-0 pb-6">
+                                <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-purple-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                <p class="text-xs text-brand-mid mb-1">15:49</p>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
+                                   中介告知房东，租客已同意<strong class="font-semibold">一直 "押一付三"</strong>。
+                                </p>
+                            </div>
+                        </div>
                      </div>
 
-                     <!-- Event: Broadband Info -->
-                      <div class="relative pl-8 md:pl-10 pb-6">
-                          <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                         <p class="text-xs text-brand-mid mb-1">16:17 - 18:49</p>
-                         <p class="text-sm leading-relaxed">
-                            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
-                            提供办理宽带所需个人信息。
-                         </p>
+                     <!-- Event: Broadband Info (Left Side) -->
+                      <div class="relative flex md:justify-start mb-8">
+                          <div class="w-full md:w-1/2 md:pr-8">
+                            <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                <p class="text-xs text-brand-mid mb-1">16:17 - 18:49</p>
+                                <p class="text-sm leading-relaxed">
+                                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
+                                    提供办理宽带所需个人信息。
+                                </p>
+                            </div>
+                        </div>
                      </div>
 
-                 </div> <!-- End of Day 18 Events -->
-             </div> <!-- End of Day 18 Block -->
+                 </div> <!-- End Timeline Container -->
+             </section> <!-- End of Day 18 Block -->
 
              <!-- Day Block: April 19 -->
-             <div class="mb-12">
+             <section class="mb-12">
                  <div class="sticky top-0 bg-brand-bg py-3 z-10">
                      <h2 class="text-xl md:text-2xl font-semibold text-brand-dark border-b pb-2 border-brand-light">
                          <i data-feather="calendar" class="inline-block w-5 h-5 mr-2 align-text-bottom"></i>2025年4月19日 (星期六)
                      </h2>
                  </div>
 
-                 <div class="mt-4 space-y-6 border-l-2 border-brand-light ml-3 md:ml-5">
+                 <!-- Timeline Container -->
+                 <div class="mt-6 relative md:pl-5">
+                     <!-- Central Line (visible on md+) -->
+                     <div class="absolute left-0 md:left-1/2 w-0.5 h-full bg-brand-light transform md:-translate-x-1/2"></div>
 
-                    <!-- Event: Landlord still citing excuses -->
-                    <div class="relative pl-8 md:pl-10 pb-6 bg-yellow-50 -ml-3 md:-ml-5 p-4 rounded-r-lg border-l-4 border-yellow-500">
-                        <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-5 w-4 h-4 bg-yellow-600 rounded-full border-2 border-white"></div>
-                        <p class="text-xs text-brand-mid mb-1 font-semibold">07:05 (周六早上)</p>
-                        <p class="text-sm leading-relaxed text-yellow-900">
-                            <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
-                             <i data-feather="alert-triangle" class="inline-block w-4 h-4 mr-1 align-text-bottom text-yellow-600"></i>语音仍在强调 "押一付一难"，需 "大老板同意"，并提及宠物通常要收两个月押金。（注：再次忽略或无视租客已同意一直押一付三的事实）。
-                        </p>
-                    </div>
-
-                     <!-- Event: Reminder about contract -->
-                     <div class="relative pl-8 md:pl-10 pb-6">
-                         <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                         <p class="text-xs text-brand-mid mb-1">11:33</p>
-                         <p class="text-sm leading-relaxed">
-                             <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
-                             您提醒中介需确认签约事宜，以便安排搬家公司。
-                         </p>
+                     <!-- Event: Landlord still citing excuses (Right Side) -->
+                     <div class="relative flex md:justify-end mb-8">
+                         <div class="w-full md:w-1/2 md:pl-8">
+                             <div class="relative pl-8 md:pl-0 pb-6 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-500">
+                                 <div class="absolute left-[-0.125rem] top-5 w-4 h-4 bg-yellow-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                 <p class="text-xs text-brand-mid mb-1 font-semibold">07:05 (周六早上)</p>
+                                 <p class="text-sm leading-relaxed text-yellow-900">
+                                     <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
+                                      <i data-feather="alert-triangle" class="inline-block w-4 h-4 mr-1 align-text-bottom text-yellow-600"></i>语音仍在强调 "押一付一难"，需 "大老板同意"，并提及宠物通常要收两个月押金。（注：再次忽略或无视租客已同意一直押一付三的事实）。
+                                 </p>
+                             </div>
+                         </div>
                      </div>
 
-                     <!-- Event: Agent informs landlord of moving plans -->
-                     <div class="relative pl-8 md:pl-10 pb-6">
-                         <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                         <p class="text-xs text-brand-mid mb-1">11:52</p>
-                         <p class="text-sm leading-relaxed">
-                             <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
-                             中介语音转达租客计划周日(4月20日)下午签约，周一(4月21日)下午搬家，并询问车辆进出小区事宜。
-                         </p>
+                     <!-- Event: Reminder about contract (Left Side) -->
+                     <div class="relative flex md:justify-start mb-8">
+                          <div class="w-full md:w-1/2 md:pr-8">
+                             <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                 <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                 <p class="text-xs text-brand-mid mb-1">11:33</p>
+                                 <p class="text-sm leading-relaxed">
+                                     <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
+                                     您提醒中介需确认签约事宜，以便安排搬家公司。
+                                 </p>
+                             </div>
+                         </div>
                      </div>
 
-                     <!-- Event: Agent confirms deposit paid -->
-                     <div class="relative pl-8 md:pl-10 pb-6">
-                          <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                          <p class="text-xs text-brand-mid mb-1">13:01</p>
-                          <p class="text-sm leading-relaxed">
-                              <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
-                              中介告知房东17楼(涉案房屋)定金已交。
-                          </p>
+                     <!-- Event: Agent informs landlord of moving plans (Right Side) -->
+                     <div class="relative flex md:justify-end mb-8">
+                          <div class="w-full md:w-1/2 md:pl-8">
+                             <div class="relative pl-8 md:pl-0 pb-6">
+                                 <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-purple-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                 <p class="text-xs text-brand-mid mb-1">11:52</p>
+                                 <p class="text-sm leading-relaxed">
+                                     <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
+                                     中介语音转达租客计划周日(4月20日)下午签约，周一(4月21日)下午搬家，并询问车辆进出小区事宜。
+                                 </p>
+                             </div>
+                         </div>
+                     </div>
+
+                     <!-- Event: Agent confirms deposit paid (Right Side) -->
+                     <div class="relative flex md:justify-end mb-8">
+                          <div class="w-full md:w-1/2 md:pl-8">
+                             <div class="relative pl-8 md:pl-0 pb-6">
+                                 <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-purple-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                 <p class="text-xs text-brand-mid mb-1">13:01</p>
+                                 <p class="text-sm leading-relaxed">
+                                     <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
+                                     中介告知房东17楼(涉案房屋)定金已交。
+                                 </p>
+                             </div>
+                         </div>
+                     </div>
+
+                     <!-- Event: Landlord Confirms Deposit & Agrees to Delist (Right Side, Key Confirmation) -->
+                      <div class="relative flex md:justify-end mb-8">
+                           <div class="w-full md:w-1/2 md:pl-8">
+                              <div class="relative pl-8 md:pl-0 pb-6 bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                                  <div class="absolute left-[-0.125rem] top-5 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                  <p class="text-xs text-brand-mid mb-1 font-semibold">13:07 - 13:14</p>
+                                  <p class="text-sm leading-relaxed text-blue-900 mb-1">
+                                     <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
+                                      询问定金情况，中介确认已收。房东确认 "<strong class="font-semibold">定金为准</strong>"，同意下架房源，知晓租客周日搬家。
+                                  </p>
+                                   <p class="text-xs text-gray-500 mt-2">注：房东行为（强调定金为准、下架房源）表明其当时已接受定金并确认租赁意向，尽管内部仍在纠结付款方式。</p>
+                               </div>
+                           </div>
                        </div>
 
-                      <!-- Event: Landlord Confirms Deposit & Agrees to Delist (Key Confirmation) -->
-                       <div class="relative pl-8 md:pl-10 pb-6 bg-blue-50 -ml-3 md:-ml-5 p-4 rounded-r-lg border-l-4 border-blue-500">
-                          <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-5 w-4 h-4 bg-blue-600 rounded-full border-2 border-white"></div>
-                          <p class="text-xs text-brand-mid mb-1 font-semibold">13:07 - 13:14</p>
-                          <p class="text-sm leading-relaxed text-blue-900 mb-1">
-                             <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
-                              询问定金情况，中介确认已收。房东确认 "<strong class="font-semibold">定金为准</strong>"，同意下架房源，知晓租客周日搬家。
-                          </p>
-                           <p class="text-xs text-gray-500 mt-2">注：房东行为（强调定金为准、下架房源）表明其当时已接受定金并确认租赁意向，尽管内部仍在纠结付款方式。</p>
-                       </div>
+                       <!-- Event: Landlord repeats payment difficulty excuse (Right Side) -->
+                        <div class="relative flex md:justify-end mb-8">
+                             <div class="w-full md:w-1/2 md:pl-8">
+                                 <div class="relative pl-8 md:pl-0 pb-6 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-500">
+                                     <div class="absolute left-[-0.125rem] top-5 w-4 h-4 bg-yellow-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                     <p class="text-xs text-brand-mid mb-1 font-semibold">14:39</p>
+                                     <p class="text-sm leading-relaxed text-yellow-900">
+                                         <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
+                                         <i data-feather="alert-triangle" class="inline-block w-4 h-4 mr-1 align-text-bottom text-yellow-600"></i>表示 "领导说，押一付一有点难度，可以了合同发你微信"。（表述含糊，仍纠结于已被租客同意修改的付款方式）
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
 
-                      <!-- Event: Landlord repeats payment difficulty excuse -->
-                       <div class="relative pl-8 md:pl-10 pb-6 bg-yellow-50 -ml-3 md:-ml-5 p-4 rounded-r-lg border-l-4 border-yellow-500">
-                            <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-5 w-4 h-4 bg-yellow-600 rounded-full border-2 border-white"></div>
-                            <p class="text-xs text-brand-mid mb-1 font-semibold">14:39</p>
-                            <p class="text-sm leading-relaxed text-yellow-900">
-                                <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
-                                <i data-feather="alert-triangle" class="inline-block w-4 h-4 mr-1 align-text-bottom text-yellow-600"></i>表示 "领导说，押一付一有点难度，可以了合同发你微信"。（表述含糊，仍纠结于已被租客同意修改的付款方式）
-                            </p>
+
+                           <!-- Event: Evening Calls (Left Side) -->
+                           <div class="relative flex md:justify-start mb-8">
+                               <div class="w-full md:w-1/2 md:pr-8">
+                                 <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                     <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                     <p class="text-xs text-brand-mid mb-1">晚上 (20:22 - 22:15)</p>
+                                     <p class="text-sm leading-relaxed">
+                                         <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
+                                         <i data-feather="phone" class="inline-block w-4 h-4 mr-1 align-text-bottom"></i>多次通话。中介表示尚未收到房东最终确认，但承诺收到即通知，并认为不影响次日（周日，4月20日）搬家。
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+
+                        <!-- Event: Landlord Explicitly Prevents Moving (Right Side, Key Breach) -->
+                         <div class="relative flex md:justify-end mb-8">
+                            <div class="w-full md:w-1/2 md:pl-8">
+                                <div class="relative pl-8 md:pl-0 pb-6 bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
+                                    <div class="absolute left-[-0.125rem] top-5 w-4 h-4 bg-red-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                    <p class="text-xs text-brand-mid mb-1 font-semibold">晚上 21:29</p>
+                                    <p class="text-sm font-semibold text-red-800 mb-1">
+                                       <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
+                                       <i data-feather="x-octagon" class="inline-block w-4 h-4 mr-1 align-text-bottom text-red-600"></i>以"领导休息"、"还没通过"为由拖延。
+                                    </p>
+                                     <p class="text-sm leading-relaxed text-red-900 mb-1">
+                                        <i data-feather="slash" class="inline-block w-4 h-4 mr-1 align-text-bottom text-red-600"></i>明确表示: "<strong class="font-semibold">让他先别搬</strong>"。
+                                    </p>
+                                    <p class="text-sm leading-relaxed text-red-900">
+                                        <i data-feather="alert-circle" class="inline-block w-4 h-4 mr-1 align-text-bottom"></i>强调: "<strong class="font-semibold">合同都没签怎么办</strong>"，"<strong class="font-semibold">月付宠物难度很大</strong>"。
+                                    </p>
+                                     <p class="text-xs text-gray-500 mt-2">注：房东明确阻止租客按计划搬家和签约，构成关键违约行为。</p>
+                                </div>
+                            </div>
                         </div>
 
+                         <!-- Event: Agent re-confirms payment terms (Right Side) -->
+                          <div class="relative flex md:justify-end mb-8">
+                             <div class="w-full md:w-1/2 md:pl-8">
+                                <div class="relative pl-8 md:pl-0 pb-6">
+                                    <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-purple-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                    <p class="text-xs text-brand-mid mb-1">晚上 21:48</p>
+                                    <p class="text-sm leading-relaxed">
+                                        <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
+                                        再次向房东确认 "可以一直押一付三，租客确认了没问题"。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-                          <!-- Event: Evening Calls -->
-                          <div class="relative pl-8 md:pl-10 pb-6">
-                              <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                             <p class="text-xs text-brand-mid mb-1">晚上 (20:22 - 22:15)</p>
-                             <p class="text-sm leading-relaxed">
-                                 <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
-                                 <i data-feather="phone" class="inline-block w-4 h-4 mr-1 align-text-bottom"></i>多次通话。中介表示尚未收到房东最终确认，但承诺收到即通知，并认为不影响次日（周日，4月20日）搬家。
-                             </p>
-                         </div>
+                    </div> <!-- End Timeline Container -->
+                </section> <!-- End of Day 19 Block -->
 
-                        <!-- Event: Landlord Explicitly Prevents Moving (Key Breach) -->
-                         <div class="relative pl-8 md:pl-10 pb-6 bg-red-50 -ml-3 md:-ml-5 p-4 rounded-r-lg border-l-4 border-red-500">
-                            <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-5 w-4 h-4 bg-red-600 rounded-full border-2 border-white"></div>
-                            <p class="text-xs text-brand-mid mb-1 font-semibold">晚上 21:29</p>
-                            <p class="text-sm font-semibold text-red-800 mb-1">
-                               <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
-                               <i data-feather="x-octagon" class="inline-block w-4 h-4 mr-1 align-text-bottom text-red-600"></i>以"领导休息"、"还没通过"为由拖延。
-                            </p>
-                             <p class="text-sm leading-relaxed text-red-900 mb-1">
-                                <i data-feather="slash" class="inline-block w-4 h-4 mr-1 align-text-bottom text-red-600"></i>明确表示: "<strong class="font-semibold">让他先别搬</strong>"。
-                            </p>
-                            <p class="text-sm leading-relaxed text-red-900">
-                                <i data-feather="alert-circle" class="inline-block w-4 h-4 mr-1 align-text-bottom"></i>强调: "<strong class="font-semibold">合同都没签怎么办</strong>"，"<strong class="font-semibold">月付宠物难度很大</strong>"。
-                            </p>
-                             <p class="text-xs text-gray-500 mt-2">注：房东明确阻止租客按计划搬家和签约，构成关键违约行为。</p>
-                         </div>
-
-                         <!-- Event: Agent re-confirms payment terms -->
-                          <div class="relative pl-8 md:pl-10 pb-6">
-                             <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                             <p class="text-xs text-brand-mid mb-1">晚上 21:48</p>
-                             <p class="text-sm leading-relaxed">
-                                 <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
-                                再次向房东确认 "可以一直押一付三，租客确认了没问题"。
-                             </p>
-                         </div>
-
-                     </div> <!-- End of Day 19 Events -->
-                 </div> <!-- End of Day 19 Block -->
-
-                 <!-- Day Block: April 20 -->
-                 <div class="mb-12">
+                <!-- Day Block: April 20 -->
+                <section class="mb-12">
                      <div class="sticky top-0 bg-brand-bg py-3 z-10">
                          <h2 class="text-xl md:text-2xl font-semibold text-brand-dark border-b pb-2 border-brand-light">
                               <i data-feather="calendar" class="inline-block w-5 h-5 mr-2 align-text-bottom"></i>2025年4月20日 (星期日)
                          </h2>
                      </div>
 
-                     <div class="mt-4 space-y-6 border-l-2 border-brand-light ml-3 md:ml-5">
+                     <!-- Timeline Container -->
+                     <div class="mt-6 relative md:pl-5">
+                         <!-- Central Line (visible on md+) -->
+                         <div class="absolute left-0 md:left-1/2 w-0.5 h-full bg-brand-light transform md:-translate-x-1/2"></div>
 
-                         <!-- Event: Landlord's early morning excuses -->
-                         <div class="relative pl-8 md:pl-10 pb-6 bg-yellow-50 -ml-3 md:-ml-5 p-4 rounded-r-lg border-l-4 border-yellow-500">
-                             <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-5 w-4 h-4 bg-yellow-600 rounded-full border-2 border-white"></div>
-                             <p class="text-xs text-brand-mid mb-1 font-semibold">凌晨 03:12 - 03:24</p>
-                             <p class="text-sm leading-relaxed text-yellow-900">
-                                 <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
-                                  <i data-feather="alert-triangle" class="inline-block w-4 h-4 mr-1 align-text-bottom text-yellow-600"></i>抱怨中介"不早说"（指押一付三），仍以老板休息、公司有"资方"流程复杂为由推脱。明确"住宅都季付起步，月付还要价钱"。
-                             </p>
+                         <!-- Event: Landlord's early morning excuses (Right Side) -->
+                         <div class="relative flex md:justify-end mb-8">
+                              <div class="w-full md:w-1/2 md:pl-8">
+                                 <div class="relative pl-8 md:pl-0 pb-6 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-500">
+                                     <div class="absolute left-[-0.125rem] top-5 w-4 h-4 bg-yellow-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                     <p class="text-xs text-brand-mid mb-1 font-semibold">凌晨 03:12 - 03:24</p>
+                                     <p class="text-sm leading-relaxed text-yellow-900">
+                                         <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
+                                          <i data-feather="alert-triangle" class="inline-block w-4 h-4 mr-1 align-text-bottom text-yellow-600"></i>抱怨中介"不早说"（指押一付三），仍以老板休息、公司有"资方"流程复杂为由推脱。明确"住宅都季付起步，月付还要价钱"。
+                                     </p>
+                                 </div>
+                             </div>
                          </div>
 
-                         <!-- Event: You inform agent of arrival & moving plans -->
-                         <div class="relative pl-8 md:pl-10 pb-6">
-                             <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                             <p class="text-xs text-brand-mid mb-1">09:30 - 10:00</p>
-                             <p class="text-sm leading-relaxed mb-1">
-                                <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
-                                告知预计下午到达，询问签约时间。
-                             </p>
-                             <p class="text-sm leading-relaxed mb-1">
-                                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded mr-1">【中介-您】</span>
-                                转述房东借口（合同修改、领导审批）导致签约延迟。
-                             </p>
-                              <p class="text-sm leading-relaxed">
-                                 <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
-                                 告知<strong class="font-semibold">搬家车辆已安排</strong>。
-                             </p>
+                         <!-- Event: You inform agent of arrival & moving plans (Left Side) -->
+                         <div class="relative flex md:justify-start mb-8">
+                              <div class="w-full md:w-1/2 md:pr-8">
+                                 <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                     <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                     <p class="text-xs text-brand-mid mb-1">09:30 - 10:00</p>
+                                     <p class="text-sm leading-relaxed mb-1">
+                                        <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
+                                        告知预计下午到达，询问签约时间。
+                                     </p>
+                                     <p class="text-sm leading-relaxed mb-1">
+                                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded mr-1">【中介-您】</span>
+                                        转述房东借口（合同修改、领导审批）导致签约延迟。
+                                     </p>
+                                      <p class="text-sm leading-relaxed">
+                                         <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
+                                         告知<strong class="font-semibold">搬家车辆已安排</strong>。
+                                     </p>
+                                 </div>
+                             </div>
                          </div>
 
-                         <!-- Event: Landlord Explicitly Backs Out (Key Breach & Evidence) -->
-                         <div class="relative pl-8 md:pl-10 pb-6 bg-red-50 -ml-3 md:-ml-5 p-4 rounded-r-lg border-l-4 border-red-500">
-                             <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-5 w-4 h-4 bg-red-600 rounded-full border-2 border-white"></div>
-                             <p class="text-xs text-brand-mid mb-1 font-semibold">10:37 (附近)</p>
-                             <p class="text-sm font-semibold text-red-800 mb-1">
-                                 <i data-feather="phone" class="inline-block w-4 h-4 mr-1 align-text-bottom"></i>【您-房东】<strong class="text-red-700">电话录音证据</strong>
-                             </p>
-                             <p class="text-sm leading-relaxed text-red-900 mb-1">
-                                 <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
-                                 <i data-feather="x-circle" class="inline-block w-4 h-4 mr-1 align-text-bottom text-red-600"></i>明确表示 <strong class="font-semibold">不再出租</strong>。
-                             </p>
-                             <p class="text-sm leading-relaxed text-red-900">
-                                 <i data-feather="alert-octagon" class="inline-block w-4 h-4 mr-1 align-text-bottom text-red-600"></i>声称之前收取的3700元是 <strong class="font-semibold">"意向金"</strong> 而非 "定金"，认为自己不算违约。
-                             </p>
-                             <p class="text-sm leading-relaxed mt-2">
-                                  <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
-                                  向中介表达不满，引用定金协议。
-                             </p>
+                         <!-- Event: Landlord Explicitly Backs Out (Right Side, Key Breach & Evidence) -->
+                         <div class="relative flex md:justify-end mb-8">
+                              <div class="w-full md:w-1/2 md:pl-8">
+                                 <div class="relative pl-8 md:pl-0 pb-6 bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
+                                     <div class="absolute left-[-0.125rem] top-5 w-4 h-4 bg-red-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                     <p class="text-xs text-brand-mid mb-1 font-semibold">10:37 (附近)</p>
+                                     <p class="text-sm font-semibold text-red-800 mb-1">
+                                         <i data-feather="phone" class="inline-block w-4 h-4 mr-1 align-text-bottom"></i>【您-房东】<strong class="text-red-700">电话录音证据</strong>
+                                     </p>
+                                     <p class="text-sm leading-relaxed text-red-900 mb-1">
+                                         <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
+                                         <i data-feather="x-circle" class="inline-block w-4 h-4 mr-1 align-text-bottom text-red-600"></i>明确表示 <strong class="font-semibold">不再出租</strong>。
+                                     </p>
+                                     <p class="text-sm leading-relaxed text-red-900">
+                                         <i data-feather="alert-octagon" class="inline-block w-4 h-4 mr-1 align-text-bottom text-red-600"></i>声称之前收取的3700元是 <strong class="font-semibold">"意向金"</strong> 而非 "定金"，认为自己不算违约。
+                                     </p>
+                                     <p class="text-sm leading-relaxed mt-2">
+                                          <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
+                                          向中介表达不满，引用定金协议。
+                                     </p>
+                                 </div>
+                             </div>
                          </div>
 
-                              <!-- Event: Follow-up Communication -->
-                             <div class="relative pl-8 md:pl-10 pb-6">
-                                 <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                                 <p class="text-xs text-brand-mid mb-1">10:46 - 11:53</p>
-                                 <p class="text-sm leading-relaxed mb-1">
-                                      <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
-                                      告知打包即将完成，提出"还有个方案"，提供房东电话，提出定金退还问题。
-                                 </p>
+                              <!-- Event: Follow-up Communication (Left Side) -->
+                             <div class="relative flex md:justify-start mb-8">
+                                  <div class="w-full md:w-1/2 md:pr-8">
+                                     <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                         <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                         <p class="text-xs text-brand-mid mb-1">10:46 - 11:53</p>
+                                         <p class="text-sm leading-relaxed mb-1">
+                                              <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
+                                              告知打包即将完成，提出"还有个方案"，提供房东电话，提出定金退还问题。
+                                         </p>
+                                     </div>
+                                 </div>
                              </div>
 
-                            <!-- Event: Agent sends landlord tenant's contact & willingness to cover costs -->
-                             <div class="relative pl-8 md:pl-10 pb-6">
-                                 <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                                 <p class="text-xs text-brand-mid mb-1">11:42 (Part 1)</p>
-                                 <p class="text-sm leading-relaxed">
-                                    <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
-                                    中介告知房东已将电话给租客，并传达了押金退还、中介承担其他费用的意愿。
-                                 </p>
+                            <!-- Event: Agent sends landlord tenant's contact & willingness to cover costs (Right Side) -->
+                             <div class="relative flex md:justify-end mb-8">
+                                  <div class="w-full md:w-1/2 md:pl-8">
+                                     <div class="relative pl-8 md:pl-0 pb-6">
+                                         <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-purple-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                         <p class="text-xs text-brand-mid mb-1">11:42 (Part 1)</p>
+                                         <p class="text-sm leading-relaxed">
+                                            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
+                                            中介告知房东已将电话给租客，并传达了押金退还、中介承担其他费用的意愿。
+                                         </p>
+                                     </div>
+                                 </div>
                              </div>
 
-                            <!-- Event: Landlord Agrees to Refund (Verbally) but Blames Tenant -->
-                             <div class="relative pl-8 md:pl-10 pb-6 bg-yellow-50 -ml-3 md:-ml-5 p-4 rounded-r-lg border-l-4 border-yellow-500">
-                                 <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-5 w-4 h-4 bg-yellow-600 rounded-full border-2 border-white"></div>
-                                 <p class="text-xs text-brand-mid mb-1 font-semibold">11:42 (Part 2) - 11:54</p>
-                                 <p class="text-sm leading-relaxed text-yellow-900 mb-1">
-                                     <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
-                                      表示 "<strong class="font-semibold">没事，直接退了好了</strong>"，但拒绝承担其他责任。
-                                 </p>
-                                 <p class="text-sm leading-relaxed text-yellow-900 mt-1">
-                                     <i data-feather="user-x" class="inline-block w-4 h-4 mr-1 align-text-bottom text-yellow-600"></i><span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>将责任归咎于租客 "急急忙忙要搬家怪不了谁"，并轻视合同效力（""还合同只是一个形式@@@"），暗示交易彻底失败。
-                                 </p>
-                                 <p class="text-xs text-gray-500 mt-2">注：口头承诺退款但立刻推卸责任，且后续行为表明并未实际执行。</p>
+                            <!-- Event: Landlord Agrees to Refund (Verbally) but Blames Tenant (Right Side) -->
+                             <div class="relative flex md:justify-end mb-8">
+                                 <div class="w-full md:w-1/2 md:pl-8">
+                                    <div class="relative pl-8 md:pl-0 pb-6 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-500">
+                                        <div class="absolute left-[-0.125rem] top-5 w-4 h-4 bg-yellow-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                        <p class="text-xs text-brand-mid mb-1 font-semibold">11:42 (Part 2) - 11:54</p>
+                                        <p class="text-sm leading-relaxed text-yellow-900 mb-1">
+                                            <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
+                                             表示 "<strong class="font-semibold">没事，直接退了好了</strong>"，但拒绝承担其他责任。
+                                        </p>
+                                        <p class="text-sm leading-relaxed text-yellow-900 mt-1">
+                                            <i data-feather="user-x" class="inline-block w-4 h-4 mr-1 align-text-bottom text-yellow-600"></i><span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>将责任归咎于租客 "急急忙忙要搬家怪不了谁"，并轻视合同效力（""还合同只是一个形式@@@"），暗示交易彻底失败。
+                                        </p>
+                                        <p class="text-xs text-gray-500 mt-2">注：口头承诺退款但立刻推卸责任，且后续行为表明并未实际执行。</p>
+                                    </div>
+                                </div>
                              </div>
 
-                            <!-- Event: Agent informs tenant, landlord's "Intent Money" claim -->
-                             <div class="relative pl-8 md:pl-10 pb-6">
-                                 <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                                 <p class="text-xs text-brand-mid mb-1">中午 12:01 - 13:05 (穿插进行)</p>
-                                 <p class="text-sm leading-relaxed mb-1">
-                                     <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded mr-1">【中介-您】</span>
-                                    中介将房东电话发给您，并告知房东押金正常退，其他费用中介承担。初步回复定金 "明天(4月21日)" 退。转述房东的 <strong class="font-semibold">"意向金"</strong> 说辞。
-                                 </p>
-                                 <p class="text-sm leading-relaxed">
-                                     <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
-                                      表示将咨询律师，手写损失清单，再次引用<strong class="font-semibold">定金罚则</strong>。
-                                 </p>
+                            <!-- Event: Agent informs tenant, landlord's "Intent Money" claim (Left Side) -->
+                             <div class="relative flex md:justify-start mb-8">
+                                 <div class="w-full md:w-1/2 md:pr-8">
+                                    <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                        <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                        <p class="text-xs text-brand-mid mb-1">中午 12:01 - 13:05 (穿插进行)</p>
+                                        <p class="text-sm leading-relaxed mb-1">
+                                            <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded mr-1">【中介-您】</span>
+                                            中介将房东电话发给您，并告知房东押金正常退，其他费用中介承担。初步回复定金 "明天(4月21日)" 退。转述房东的 <strong class="font-semibold">"意向金"</strong> 说辞。
+                                        </p>
+                                        <p class="text-sm leading-relaxed">
+                                            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
+                                            表示将咨询律师，手写损失清单，再次引用<strong class="font-semibold">定金罚则</strong>。
+                                        </p>
+                                    </div>
+                                </div>
                              </div>
 
 
-                              <!-- Event: Agent provides bank account -->
-                               <div class="relative pl-8 md:pl-10 pb-6">
-                                   <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                                   <p class="text-xs text-brand-mid mb-1">中午 12:02 - 12:17</p>
-                                   <p class="text-sm leading-relaxed">
-                                       <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
-                                       中介提供自己银行账户信息用于接收退款转交。
-                                   </p>
+                              <!-- Event: Agent provides bank account (Right Side) -->
+                               <div class="relative flex md:justify-end mb-8">
+                                   <div class="w-full md:w-1/2 md:pl-8">
+                                        <div class="relative pl-8 md:pl-0 pb-6">
+                                            <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-purple-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                            <p class="text-xs text-brand-mid mb-1">中午 12:02 - 12:17</p>
+                                            <p class="text-sm leading-relaxed">
+                                                <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
+                                                中介提供自己银行账户信息用于接收退款转交。
+                                            </p>
+                                        </div>
+                                   </div>
                                </div>
 
-                               <!-- Event: Requesting records & info -->
-                               <div class="relative pl-8 md:pl-10 pb-6">
-                                  <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                                  <p class="text-xs text-brand-mid mb-1">晚上 18:08 - 20:05</p>
-                                  <p class="text-sm leading-relaxed mb-1">
-                                       <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
-                                      再次要求中介提供与房东聊天记录和房东姓名，反驳问题归咎于您着急搬家。继续追问房东公司名称。
-                                  </p>
-                                  <p class="text-sm leading-relaxed">
-                                       <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded mr-1">【中介-您】</span>
-                                     发送了部分聊天记录截图。表示不知房东公司名，会再问。
-                                  </p>
+                               <!-- Event: Requesting records & info (Left Side) -->
+                               <div class="relative flex md:justify-start mb-8">
+                                  <div class="w-full md:w-1/2 md:pr-8">
+                                        <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                            <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                            <p class="text-xs text-brand-mid mb-1">晚上 18:08 - 20:05</p>
+                                            <p class="text-sm leading-relaxed mb-1">
+                                                <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
+                                                再次要求中介提供与房东聊天记录和房东姓名，反驳问题归咎于您着急搬家。继续追问房东公司名称。
+                                            </p>
+                                        </div>
+                                  </div>
                               </div>
 
-                              <!-- Event: Refund follow-up (Moved to correct day) -->
-                               <div class="relative pl-8 md:pl-10 pb-6">
-                                   <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                                  <p class="text-xs text-brand-mid mb-1">下午 (具体时间不明，12:17之后)</p>
-                                  <p class="text-sm leading-relaxed mb-1">
-                                       <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
-                                      追问退款时间。
-                                  </p>
-                                  <p class="text-sm leading-relaxed">
-                                     <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
-                                      中介与房东沟通，房东回复 "款还没到账"。
-                                  </p>
-                                   <p class="text-xs text-gray-500 mt-2">注：退款并未如承诺般完成。</p>
-                               </div>
+                              <!-- Event: Refund follow-up (Left Side) -->
+                               <div class="relative flex md:justify-start mb-8">
+                                   <div class="w-full md:w-1/2 md:pr-8">
+                                        <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                            <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                            <p class="text-xs text-brand-mid mb-1">下午 (具体时间不明，12:17之后)</p>
+                                            <p class="text-sm leading-relaxed mb-1">
+                                                <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您-中介】</span>
+                                                追问退款时间。
+                                            </p>
+                                            <p class="text-sm leading-relaxed">
+                                                <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介反馈】</span>
+                                                中介与房东沟通，房东回复 "款还没到账"。
+                                            </p>
+                                            <p class="text-xs text-gray-500 mt-2">注：退款并未如承诺般完成。</p>
+                                        </div>
+                                    </div>
+                                </div>
 
 
-                           </div> <!-- End of Day 20 Events -->
-                       </div> <!-- End of Day 20 Block -->
+                           </div> <!-- End Timeline Container -->
+                       </section> <!-- End of Day 20 Block -->
 
                        <!-- Day Block: April 21 -->
-                       <div class="mb-12">
+                       <section class="mb-12">
                            <div class="sticky top-0 bg-brand-bg py-3 z-10">
                                <h2 class="text-xl md:text-2xl font-semibold text-brand-dark border-b pb-2 border-brand-light">
                                    <i data-feather="calendar" class="inline-block w-5 h-5 mr-2 align-text-bottom"></i>2025年4月21日 (星期一)
                                </h2>
                            </div>
 
-                           <div class="mt-4 space-y-6 border-l-2 border-brand-light ml-3 md:ml-5">
+                           <!-- Timeline Container -->
+                           <div class="mt-6 relative md:pl-5">
+                               <!-- Central Line (visible on md+) -->
+                               <div class="absolute left-0 md:left-1/2 w-0.5 h-full bg-brand-light transform md:-translate-x-1/2"></div>
 
-                              <!-- Event: Refund promised for today -->
-                               <div class="relative pl-8 md:pl-10 pb-6">
-                                   <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                                   <p class="text-xs text-brand-mid mb-1">上午/白天</p>
-                                   <p class="text-sm leading-relaxed">
-                                       (根据之前记录推测) 双方沟通退款事宜，房东或中介表示当天会退款。
-                                   </p>
-                               </div>
-
-
-                               <!-- Event: Police Called -->
-                               <div class="relative pl-8 md:pl-10 pb-6 bg-blue-50 -ml-3 md:-ml-5 p-4 rounded-r-lg border-l-4 border-blue-500">
-                                   <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-5 w-4 h-4 bg-blue-600 rounded-full border-2 border-white"></div>
-                                   <p class="text-xs text-brand-mid mb-1 font-semibold">晚上 18:00 左右</p>
-                                    <p class="text-sm leading-relaxed text-blue-900">
-                                       <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您】</span>
-                                       <i data-feather="alert-triangle" class="inline-block w-4 h-4 mr-1 align-text-bottom"></i>因当天仍未收到承诺的定金退款，报警求助。
-                                    </p>
-                               </div>
-
-                               <!-- Event: Police Mediation & Landlord Unreachable -->
-                                <div class="relative pl-8 md:pl-10 pb-6">
-                                   <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                                   <p class="text-xs text-brand-mid mb-1">晚上 (报警后)</p>
-                                    <p class="text-sm leading-relaxed mb-1">
-                                        <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded mr-1">【警方 & 中介 & 您】</span>
-                                        警方介入协调，中介到场。
-                                   </p>
-                                    <p class="text-sm leading-relaxed">
-                                       <i data-feather="phone-off" class="inline-block w-4 h-4 mr-1 align-text-bottom text-yellow-600"></i>房东电话始终无人接听（包括警方尝试联系）。
-                                   </p>
-                               </div>
-
-                               <!-- Event: Landlord Lies About Payment (Key False Statement) -->
-                               <div class="relative pl-8 md:pl-10 pb-6 bg-red-50 -ml-3 md:-ml-5 p-4 rounded-r-lg border-l-4 border-red-500">
-                                   <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-5 w-4 h-4 bg-red-600 rounded-full border-2 border-white"></div>
-                                   <p class="text-xs text-brand-mid mb-1 font-semibold">晚上 22:00 左右</p>
-                                   <p class="text-sm font-semibold text-red-800 mb-1">
-                                       <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
-                                       <i data-feather="message-square" class="inline-block w-4 h-4 mr-1 align-text-bottom"></i>(通过微信向中介)
-                                   </p>
-                                    <p class="text-sm leading-relaxed text-red-900">
-                                        <i data-feather="alert-octagon" class="inline-block w-4 h-4 mr-1 align-text-bottom text-red-600"></i>谎称定金 "<strong class="font-semibold">已打款</strong>"，可能延迟到账。
-                                   </p>
-                                   <p class="text-xs text-gray-500 mt-2">注：此为虚假陈述，意在拖延和欺骗。后续警方再次尝试联系，电话仍无人接听。</p>
-                               </div>
-
-                               <!-- Event: Landlord Informed of Lawsuit -->
-                               <div class="relative pl-8 md:pl-10 pb-6">
-                                   <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                                   <p class="text-xs text-brand-mid mb-1">深夜 (接近周二凌晨)</p>
-                                    <p class="text-sm leading-relaxed">
-                                       <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
-                                        中介告知房东租客可能提起诉讼。
-                                   </p>
-                               </div>
-
-
-                           </div> <!-- End of Day 21 Events -->
-                       </div> <!-- End of Day 21 Block -->
-
-                       <!-- Day Block: April 22 -->
-                        <div class="mb-12">
-                           <div class="sticky top-0 bg-brand-bg py-3 z-10">
-                                <h2 class="text-xl md:text-2xl font-semibold text-brand-dark border-b pb-2 border-brand-light">
-                                    <i data-feather="calendar" class="inline-block w-5 h-5 mr-2 align-text-bottom"></i>2025年4月22日 (星期二)
-                                </h2>
-                            </div>
-                           <div class="mt-4 space-y-6 border-l-2 border-brand-light ml-3 md:ml-5">
-                               <!-- Event: Deposit Still Not Received -->
-                                <div class="relative pl-8 md:pl-10 pb-6">
-                                   <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                                   <p class="text-xs text-brand-mid mb-1">全天</p>
-                                    <p class="text-sm leading-relaxed">
-                                       <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您】</span>
-                                        确认定金仍未到账。
-                                    </p>
+                               <!-- Event: Refund promised for today (Left Side - Tenant Perspective) -->
+                               <div class="relative flex md:justify-start mb-8">
+                                   <div class="w-full md:w-1/2 md:pr-8">
+                                        <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                            <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                            <p class="text-xs text-brand-mid mb-1">上午/白天</p>
+                                            <p class="text-sm leading-relaxed">
+                                                (根据之前记录推测) 双方沟通退款事宜，房东或中介表示当天会退款。
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                               <!-- Event: Final Refusal to Refund (Key Breach) -->
-                                <div class="relative pl-8 md:pl-10 pb-6 bg-red-100 -ml-3 md:-ml-5 p-4 rounded-r-lg border-l-8 border-red-700">
-                                   <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-5 w-4 h-4 bg-red-700 rounded-full border-2 border-white"></div>
-                                   <p class="text-xs text-brand-mid mb-1 font-semibold">时间不明确 (可能在凌晨或白天)</p>
-                                    <p class="text-sm font-bold text-red-900 mb-1">
-                                       <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
-                                       <i data-feather="slash" class="inline-block w-4 h-4 mr-1 align-text-bottom"></i><i data-feather="dollar-sign" class="inline-block w-4 h-4 mr-1 align-text-bottom"></i>(在得知租客准备起诉后，通过微信向中介明确表示)
-                                   </p>
-                                   <p class="text-xl font-semibold text-red-700 text-center py-2">
-                                       不再退还定金，等待租客诉讼。
-                                   </p>
-                                   <p class="text-xs text-gray-500 mt-2 text-center">注：最终、明确地拒绝履行退款义务。</p>
-                               </div>
-                            </div> <!-- End of Day 22 Events -->
-                        </div> <!-- End of Day 22 Block -->
+
+
+                                <!-- Event: Police Called (Left Side) -->
+                                <div class="relative flex md:justify-start mb-8">
+                                    <div class="w-full md:w-1/2 md:pr-8">
+                                        <div class="relative pl-8 md:pl-0 md:text-right pb-6 bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 md:border-l-0 md:border-r-4">
+                                            <div class="absolute left-[-0.125rem] top-5 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                            <p class="text-xs text-brand-mid mb-1 font-semibold">晚上 18:00 左右</p>
+                                            <p class="text-sm leading-relaxed text-blue-900">
+                                                <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您】</span>
+                                                <i data-feather="alert-triangle" class="inline-block w-4 h-4 mr-1 align-text-bottom"></i>因当天仍未收到承诺的定金退款，报警求助。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Event: Police Mediation & Landlord Unreachable (Mixed - Place Left) -->
+                                <div class="relative flex md:justify-start mb-8">
+                                    <div class="w-full md:w-1/2 md:pr-8">
+                                        <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                            <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                            <p class="text-xs text-brand-mid mb-1">晚上 (报警后)</p>
+                                            <p class="text-sm leading-relaxed mb-1">
+                                                <span class="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded mr-1">【警方 & 中介 & 您】</span>
+                                                警方介入协调，中介到场。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Event: Landlord Lies About Payment (Right Side, Key False Statement) -->
+                                <div class="relative flex md:justify-end mb-8">
+                                    <div class="w-full md:w-1/2 md:pl-8">
+                                        <div class="relative pl-8 md:pl-0 pb-6 bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
+                                            <div class="absolute left-[-0.125rem] top-5 w-4 h-4 bg-red-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                            <p class="text-xs text-brand-mid mb-1 font-semibold">晚上 22:00 左右</p>
+                                            <p class="text-sm font-semibold text-red-800 mb-1">
+                                                <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
+                                                <i data-feather="message-square" class="inline-block w-4 h-4 mr-1 align-text-bottom"></i>(通过微信向中介)
+                                            </p>
+                                            <p class="text-sm leading-relaxed text-red-900">
+                                                <i data-feather="alert-octagon" class="inline-block w-4 h-4 mr-1 align-text-bottom text-red-600"></i>谎称定金 "<strong class="font-semibold">已打款</strong>"，可能延迟到账。
+                                            </p>
+                                            <p class="text-xs text-gray-500 mt-2">注：此为虚假陈述，意在拖延和欺骗。后续警方再次尝试联系，电话仍无人接听。</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Event: Landlord Informed of Lawsuit (Right Side) -->
+                                <div class="relative flex md:justify-end mb-8">
+                                    <div class="w-full md:w-1/2 md:pl-8">
+                                        <div class="relative pl-8 md:pl-0 pb-6">
+                                            <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-purple-600 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                            <p class="text-xs text-brand-mid mb-1">深夜 (接近周二凌晨)</p>
+                                            <p class="text-sm leading-relaxed">
+                                                <span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded mr-1">【中介-房东】</span>
+                                                中介告知房东租客可能提起诉讼。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div> <!-- End Timeline Container -->
+                        </section> <!-- End of Day 21 Block -->
+
+                        <!-- Day Block: April 22 -->
+                         <section class="mb-12">
+                            <div class="sticky top-0 bg-brand-bg py-3 z-10">
+                                 <h2 class="text-xl md:text-2xl font-semibold text-brand-dark border-b pb-2 border-brand-light">
+                                     <i data-feather="calendar" class="inline-block w-5 h-5 mr-2 align-text-bottom"></i>2025年4月22日 (星期二)
+                                 </h2>
+                             </div>
+
+                             <!-- Timeline Container -->
+                             <div class="mt-6 relative md:pl-5">
+                                 <!-- Central Line (visible on md+) -->
+                                 <div class="absolute left-0 md:left-1/2 w-0.5 h-full bg-brand-light transform md:-translate-x-1/2"></div>
+
+                                 <!-- Event: Deposit Still Not Received (Left Side) -->
+                                  <div class="relative flex md:justify-start mb-8">
+                                     <div class="w-full md:w-1/2 md:pr-8">
+                                        <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                            <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                            <p class="text-xs text-brand-mid mb-1">全天</p>
+                                            <p class="text-sm leading-relaxed">
+                                                <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您】</span>
+                                                确认定金仍未到账。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Event: Final Refusal to Refund (Right Side, Key Breach) -->
+                                 <div class="relative flex md:justify-end mb-8">
+                                    <div class="w-full md:w-1/2 md:pl-8">
+                                        <div class="relative pl-8 md:pl-0 pb-6 bg-red-100 p-4 rounded-lg border-l-8 border-red-700">
+                                            <div class="absolute left-[-0.125rem] top-5 w-4 h-4 bg-red-700 rounded-full border-2 border-white md:left-[-0.5rem] md:transform md:-translate-x-full"></div>
+                                            <p class="text-xs text-brand-mid mb-1 font-semibold">时间不明确 (可能在凌晨或白天)</p>
+                                            <p class="text-sm leading-relaxed text-red-900">
+                                                <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded mr-1">【房东】</span>
+                                                <i data-feather="slash" class="inline-block w-4 h-4 mr-1 align-text-bottom text-red-600"></i><i data-feather="dollar-sign" class="inline-block w-4 h-4 mr-1 align-text-bottom text-red-600"></i>(在得知租客准备起诉后，通过微信向中介明确表示)
+                                            </p>
+                                            <p class="text-xl font-semibold text-red-700 text-center py-2">
+                                                不再退还定金，等待租客诉讼。
+                                            </p>
+                                            <p class="text-xs text-gray-500 mt-2 text-center">注：最终、明确地拒绝履行退款义务。</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div> <!-- End Timeline Container -->
+                        </section> <!-- End of Day 22 Block -->
 
                         <!-- Day Block: April 23 -->
-                         <div class="mb-12">
+                         <section class="mb-12">
                             <div class="sticky top-0 bg-brand-bg py-3 z-10">
                                  <h2 class="text-xl md:text-2xl font-semibold text-brand-dark border-b pb-2 border-brand-light">
                                     <i data-feather="calendar" class="inline-block w-5 h-5 mr-2 align-text-bottom"></i>2025年4月23日 (星期三)
                                 </h2>
                             </div>
-                             <div class="mt-4 space-y-6 border-l-2 border-brand-light ml-3 md:ml-5">
-                                <!-- Event: Deposit Still Not Received -->
-                                 <div class="relative pl-8 md:pl-10 pb-6">
-                                     <div class="absolute left-[-0.6rem] md:left-[-0.7rem] top-1 w-4 h-4 bg-brand-mid rounded-full border-2 border-white"></div>
-                                     <p class="text-xs text-brand-mid mb-1">全天</p>
-                                      <p class="text-sm leading-relaxed">
-                                         <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您】</span>
-                                          确认定金依然未到账。
-                                      </p>
-                                  </div>
-                             </div> <!-- End of Day 23 Events -->
-                         </div> <!-- End of Day 23 Block -->
+
+                            <!-- Timeline Container -->
+                             <div class="mt-6 relative md:pl-5">
+                                <!-- Central Line (visible on md+) -->
+                               <div class="absolute left-0 md:left-1/2 w-0.5 h-full bg-brand-light transform md:-translate-x-1/2"></div>
+
+                                <!-- Event: Deposit Still Not Received (Left Side) -->
+                                 <div class="relative flex md:justify-start mb-8">
+                                     <div class="w-full md:w-1/2 md:pr-8">
+                                        <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                            <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                            <p class="text-xs text-brand-mid mb-1">全天</p>
+                                            <p class="text-sm leading-relaxed">
+                                                <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您】</span>
+                                                确认定金依然未到账。
+                                            </p>
+                                        </div>
+                                    </div>
+                                 </div>
+
+                             </div> <!-- End Timeline Container -->
+                         </section> <!-- End of Day 22 Block -->
+
+                         <!-- Day Block: April 23 -->
+                          <section class="mb-12">
+                             <div class="sticky top-0 bg-brand-bg py-3 z-10">
+                                  <h2 class="text-xl md:text-2xl font-semibold text-brand-dark border-b pb-2 border-brand-light">
+                                     <i data-feather="calendar" class="inline-block w-5 h-5 mr-2 align-text-bottom"></i>2025年4月23日 (星期三)
+                                 </h2>
+                             </div>
+
+                             <!-- Timeline Container -->
+                              <div class="mt-6 relative md:pl-5">
+                                 <!-- Central Line (visible on md+) -->
+                                <div class="absolute left-0 md:left-1/2 w-0.5 h-full bg-brand-light transform md:-translate-x-1/2"></div>
+
+                                <!-- Event: Deposit Still Not Received (Left Side) -->
+                                 <div class="relative flex md:justify-start mb-8">
+                                     <div class="w-full md:w-1/2 md:pr-8">
+                                        <div class="relative pl-8 md:pl-0 md:text-right pb-6">
+                                            <div class="absolute left-[-0.125rem] top-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white md:left-auto md:right-[-0.5rem] md:transform md:translate-x-full"></div>
+                                            <p class="text-xs text-brand-mid mb-1">全天</p>
+                                            <p class="text-sm leading-relaxed">
+                                                <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded mr-1">【您】</span>
+                                                确认定金依然未到账。
+                                            </p>
+                                        </div>
+                                    </div>
+                                 </div>
+
+                             </div> <!-- End Timeline Container -->
+                         </section> <!-- End of Day 23 Block -->
 
                      </div> <!-- End of Day 21 Events -->
                  </div> <!-- End of Day 21 Block -->
